@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Task2</title>
+  </head>
+
+  <style>
+    .table2 {
+      border: 2px solid black;
+    }
+    .table3 {
+      width: 20%;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    .table4,
+    .th4,
+    .td4 {
+      /*width: 20%;*/
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    .table5,
+    .th5,
+    .td5 {
+      width: 50%;
+      border: 1px solid black;
+    }
+    .table6,
+    .th6,
+    .td6 {
+      border: 1px solid black;
+    }
+    .img {
+      height: 250px;
+      width: 350px;
+    }
+    .img1 {
+      height: 200px;
+      width: 350px;
+    }
+  </style>
+
+  <body>
+    <h1>HTML Table</h1>
+    <table class="table1">
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+
+    <table class="table2">
+      <tr>
+        <th class="table2">Country</th>
+        <th class="table2">Capital</th>
+        <th class="table2">Population</th>
+      </tr>
+      <tr>
+        <td class="table2">USA</td>
+        <td class="table2">Washington,D.C</td>
+        <td class="table2">328 million</td>
+      </tr>
+      <tr>
+        <td class="table2">India</td>
+        <td class="table2">New Delhi</td>
+        <td class="table2">1.366 million</td>
+      </tr>
+      <tr>
+        <td class="table2">Japan</td>
+        <td class="table2">Tokyo</td>
+        <td class="table2">126 million</td>
+      </tr>
+    </table>
+
+    <br />
+    <br />
+    <h2>HTML Colspan Attribute</h2>
+
+    <table class="table3">
+      <tr>
+        <th class="table3">Name</th>
+        <th class="table3">Expense</th>
+      </tr>
+      <tr>
+        <td class="table3">Arun</td>
+        <td class="table3">$10</td>
+      </tr>
+      <tr>
+        <td class="table3">Priya</td>
+        <td class="table3">$8</td>
+      </tr>
+      <tr>
+        <td colspan="2">Sum:$18</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+
+    <table class="table4">
+      <tr>
+        <th class="th4" colspan="2">FULL NAME</th>
+        <th class="th4">AGE</th>
+      </tr>
+      <tr>
+        <td class="td4">Fabio</td>
+        <td class="td4">Cimo</td>
+        <td class="td4">20</td>
+      </tr>
+      <tr>
+        <td class="td4">Jasmin</td>
+        <td class="td4">Brown</td>
+        <td class="td4">18</td>
+      </tr>
+      <tr>
+        <td class="td4">James</td>
+        <td class="td4">Wick</td>
+        <td class="td4">35</td>
+      </tr>
+      <tr>
+        <td class="td4">Donald</td>
+        <td class="td4">Dawn</td>
+        <td class="td4">29</td>
+      </tr>
+      <tr>
+        <td class="td4" colspan="2">Average age</td>
+        <td class="td4">22</td>
+      </tr>
+    </table>
+    <br />
+
+    <h2>Combining colspan and rowspan</h2>
+    <table class="table5">
+      <tr>
+        <th class="th5" colspan="2" rowspan="2">Header</th>
+        <th class="th5">data</th>
+      </tr>
+      <tr>
+        <td class="td5">data</td>
+      </tr>
+      <tr>
+        <td class="td5">data</td>
+        <td class="td5">data</td>
+        <td class="td5">data</td>
+      </tr>
+    </table>
+    <br />
+
+    <h2>Complex Table Structure</h2>
+    <table class="table6">
+      <tr>
+        <th class="th6" colspan="5">Number</th>
+      </tr>
+      <tr>
+        <td class="td6" rowspan="2">1</td>
+        <td class="td6">2</td>
+        <td class="td6">3</td>
+        <td class="td6">4</td>
+        <td class="td6">5</td>
+      </tr>
+      <tr>
+        <td class="td6">6</td>
+        <td class="td6" colspan="3">7</td>
+      </tr>
+      <tr>
+        <td class="td6" style="width: 60%">8</td>
+        <td class="td6">9</td>
+        <td class="td6" rowspan="2">10</td>
+        <td class="td6">11</td>
+        <td class="td6">12</td>
+      </tr>
+      <tr>
+        <td class="td6">13</td>
+        <td class="td6">14</td>
+        <td class="td6">15</td>
+        <td class="td6">16</td>
+      </tr>
+    </table>
+    <br />
+
+    <h2>Time Table</h2>
+    <table class="table4">
+      <tr>
+        <th class="th4" colspan="6">Time Table</th>
+      </tr>
+      <tr>
+        <td class="td4" rowspan="6"><b>Hours</b></td>
+        <td class="td4">mon</td>
+        <td class="td4">tues</td>
+        <td class="td4">wed</td>
+        <td class="td4">thurs</td>
+        <td class="td4">fri</td>
+      </tr>
+      <tr>
+        <td class="td4">Science</td>
+        <td class="td4">Maths</td>
+        <td class="td4">Science</td>
+        <td class="td4">Maths</td>
+        <td class="td4">Arts</td>
+      </tr>
+      <tr>
+        <td class="td4">Science</td>
+        <td class="td4">Maths</td>
+        <td class="td4">Science</td>
+        <td class="td4">Maths</td>
+        <td class="td4">Arts</td>
+      </tr>
+      <tr>
+        <td class="td4" colspan="5" style="text-align: center"><b>Lunch</b></td>
+      </tr>
+      <tr>
+        <td class="td4">Science</td>
+        <td class="td4">Maths</td>
+        <td class="td4">Science</td>
+        <td class="td4">Maths</td>
+        <td class="td4" rowspan="2">Project</td>
+      </tr>
+      <tr>
+        <td class="td4">Science</td>
+        <td class="td4">Maths</td>
+        <td class="td4">Science</td>
+        <td class="td4">Maths</td>
+      </tr>
+    </table>
+    <br />
+    <h2>Adding images</h2>
+    <img
+      class="img"
+      src="https://assets.goal.com/images/v3/bltfff171aa41869b23/bltfff171aa41869b23.jpg?auto=webp&format=pjpg&width=3840&quality=60"
+      alt="img of pedri"
+    />
+    <img
+      class="img"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOdi5NUWXvyQCzJscr9gNNplBWrzVeIb_hzg&s"
+      alt="nissan skyline"
+    />
+    <br />
+
+    <h2>Simple Form</h2>
+    <h3>Please fill and submit form</h3>
+    <hr />
+    <form>
+      <label>Name:</label>
+      <input type="text" /> <br />
+      <br />
+      <label>Email:</label>
+      <input type="text" /> <br />
+      <br />
+      <input type="submit" />
+    </form>
+
+    <h2>Radio Buttons</h2>
+    <h3>Please fill and submit form</h3>
+    <hr />
+    <form>
+      <label>Name:</label>
+      <input type="text"> <br/>
+       <br/>
+      <label>Email:</label>
+      <input type="text"> <br/>
+      <br/>
+      <p>Select a color you like :</p>
+      <input type="radio"> 
+      <label>Red</label> <br/>
+      <input type="radio"> 
+      <label>Green</label> <br/>
+      <input type="radio"> 
+      <label>Blue</label> <br/>
+      <br/>
+      <input type="submit">
+      <br/>
+
+      <h2>Dropdown select</h2>
+    <h3>Please fill and submit form</h3>
+    <hr />
+    <form>
+      <label>Name:</label>
+      <input type="text"> <br/>
+       <br/>
+      <label>Email:</label>
+      <input type="text"> <br/>
+      <br/>
+      <p>Select a color you like :</p> <br/>
+      <input type="radio"> 
+      <label>Red</label> <br/>
+      <input type="radio"> 
+      <label>Green</label> <br/>
+      <input type="radio"> 
+      <label>Blue</label> <br/>
+      <br/>
+      <label>Select your favorite color:</label>
+      <select name="options">
+        <option>Red</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>Yellow</option>
+      </select> 
+      <br/> 
+      <br/>
+      <input type="submit"> <br/>
+
+      <h2>Checkboxes</h2>
+      <h3>Please fill and submit form</h3>
+      <hr />
+      <form>
+        <label>Name:</label>
+        <input type="text"> <br/>
+         <br/>
+        <label>Email:</label>
+        <input type="text"> <br/>
+        <br/>
+        <label>Select a color you like :</label> <br/>
+        <br/> 
+        <input type="radio"> 
+        <label>Red</label> <br/>
+        <input type="radio"> 
+        <label>Green</label> <br/>
+        <input type="radio"> 
+        <label>Blue</label> <br/>
+        <br/>
+        <label>Select your favorite color:</label>
+        <select name="options">
+          <option>Red</option>
+          <option>Green</option>
+          <option>Blue</option>
+          <option>Yellow</option>
+        </select> 
+        <br/> <br/>
+        <label>Choose your skill level:</label> <br/> 
+        <br/> 
+        <input type="checkbox"> 
+        <label>Beginner</label> <br/>
+        <input type="checkbox"> 
+        <label>Intermediate</label> <br/>
+        <input type="checkbox"> 
+        <label>Advanced</label> <br/>
+       <br/>
+        <input type="submit"> <br/> 
+      </form>
+
+        <h2>Image Showcase using div tag</h2> 
+        <hr/>
+
+        <div>
+          <p>div-1</p>
+          <h3>Beautiful Sunset</h3>
+          <img class="img1" src="https://images.pexels.com/photos/1212600/pexels-photo-1212600.jpeg?cs=srgb&dl=pexels-lazybird-1212600.jpg&fm=jpg" alt="image of a sunset">
+          <p>This is a stunning view of a sunset over the ocean. The golden hues reflecting on the water create a mesmerizing scene that brings tranquility and peace to the mind. Behold the majestic mountains standing tall and proud. Their snow-capped peaks touch the sky, and their valleys hide secrets waiting to be explored. A paradise for adventure seekers and nature lovers</p>
+        </div>
+        <hr/>
+
+        <div>
+          <p>div-2</p>
+          <h3>Majestic Mountains</h3>
+          <img class="img1"  src="https://images.stockcake.com/public/4/7/8/47843fbc-1bcf-49ee-9512-2f8e7d2ae281_large/majestic-mountain-peaks-stockcake.jpg" alt="image of a sunset">
+          <p>Behold the majestic mountains standing tall and proud. Their snow-capped peaks touch the sky, and their valleys hide secrets waiting to be explored. A paradise for adventure seekers and nature lovers. This is a stunning view of a sunset over the ocean. The golden hues reflecting on the water create a mesmerizing scene that brings tranquility and peace to the mind.</p>
+        </div>
+        <br/>
+
+        <h2>Videos in HTML</h2> 
+        <hr/>
+        <iframe src="https://www.youtube.com/embed/BEENL2t1Qzs" height="250px" width="400px"></iframe> 
+        <br/>
+        <br/>
+
+        <h2>Advanced Table with summary</h2>
+        <table class="table6">
+          <caption>HTML Table Example</caption>
+          <tr>
+            <th class="th6" colspan="4">Student Name</th>
+            <th class="th6" colspan="3">Labs</th>
+            <th class="th6" rowspan="2">Avg</th>
+          </tr>
+          <tr>
+            <th class="th6" colspan="2">First</th>
+            <th class="th6" colspan="2">Last</th>
+            <th class="th6">Lab1</th>
+            <th class="th6">Lab2</th>
+            <th class="th6">Lab3</th>
+          </tr>
+          <tr>
+            <td class="td6" colspan="2">Sol</td>
+            <td class="td6" colspan="2">Rosenberg</td>
+            <td class="td6">100</td>
+            <td class="td6">100</td>
+            <td class="td6">100</td>
+            <td class="td6">100.0</td>
+          </tr>  
+          <tr>
+            <td class="td6" colspan="2">Frank</td>
+            <td class="td6" colspan="2">Rizzo</td>
+            <td class="td6">50</td>
+            <td class="td6">60</td>
+            <td class="td6">90</td>
+            <td class="td6">66.6</td>
+          </tr>  
+          <tr>
+            <td class="td6" colspan="2">Ali</td>
+            <td class="td6" colspan="2">Kam</td>
+            <td class="td6">90</td>
+            <td class="td6">80</td>
+            <td class="td6">60</td>
+            <td class="td6">76.6</td>
+          </tr>  
+          <tr>
+            <td class="td6" rowspan="2" colspan="2">Summary</td>
+            <td class="td6" colspan="2">Avg</td>
+            <td class="td6">80.0</td>
+            <td class="td6">80.0</td>
+            <td class="td6">83.3</td>
+            <td class="td6">81.1</td>
+          </tr>  
+          <tr>
+            <td class="td6" colspan="2">Min</td>
+            <td class="td6">50</td>
+            <td class="td6">60</td>
+            <td class="td6">60</td>
+            <td class="td6">66.6</td>
+          </tr>  
+ </table>
+
+       
+
+
+
+   
+  </body>
+</html>          
+            
+          
+         
