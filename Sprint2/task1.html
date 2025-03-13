@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .t1 {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      color: white;
+      text-align: center;
+
+    }
+
+    .t1 .header {
+      background-color: orange;
+      padding: 20px;
+    }
+
+    .t1 .footer {
+      background-color: brown;
+        padding: 20px;
+    }
+
+    .t1 .content {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+    }
+
+    .t1 .nav {
+      background-color: blue;
+      flex: 1;
+      padding: 20px;
+    }
+
+    .t1 .article {
+      background-color: green;
+      flex: 3;
+      padding: 20px;
+    }
+
+    .t2,
+    .t3 {
+      display: flex;
+      flex-direction: column;
+      color: black;
+      text-align: center;
+      border: 3px solid black;
+      width: 300px;
+    }
+
+    .t2 header {
+      background-color: rgb(243, 202, 243);
+      padding: 4vh;
+    }
+    .t2 nav {
+      background-color: rgb(114, 62, 202);
+      color: white;
+      padding: 1vh;
+    }
+    .t2 main {
+      background-color: white;
+      padding: 8vh;
+    }
+    .t2 footer {
+      background-color: rgb(187, 159, 234);
+      padding: 4vh;
+    }
+    .t3 header {
+      background-color: rgb(243, 202, 243);
+      padding: 4vh;
+    }
+    .t3 nav {
+      background-color: rgb(114, 62, 202);
+      color: white;
+      padding: 1vh;
+    }
+    .t3 footer {
+      background-color: rgb(187, 159, 234);
+      padding: 4vh;
+    }
+
+    .t3 .container {
+      display: flex;
+      flex: 1;
+    }
+    .t3 .container .side {
+      flex: 1;
+      background-color: rgb(224, 153, 213);
+      height: 20vh;
+      padding-top: 8vh;
+    }
+    .t3 .container .main-content {
+      flex: 3;
+      height: 20vh;
+      padding-top: 8vh;
+    }
+
+    /* Ex 4 */
+
+    .t4 {
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            width: 400px;
+        }
+
+        .t4 header, .t4 footer {
+            background-color: #9ac2c9;
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+        }
+
+        .t4 main {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+            background-color: rgb(234, 243, 252);
+        }
+
+        .t4 .top {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .t4 .intro, 
+        .t4 .hero, 
+        .t4 .features, 
+        .t4 .copy {
+            background-color: #9ac2c9;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .t4 .right {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .t4 .call {
+            background-color: yellow;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .t4 .features {
+            text-align: center;
+        }
+        .t4 .bottom {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        
+        .t5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+.t5 .header, 
+.t5 .nav, 
+.t5 .footer {
+    width: 100%;
+    text-align: center;
+    background-color: #ddd;
+    padding: 15px;
+    margin: 5px 0;
+}
+.t5 .feature{
+    width: 100%;
+    text-align: center;
+    background-color: #ddd;
+    margin: 5px 0;
+    height: 20vh;
+}
+.t5 .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.t5 .nav a {
+    margin: 0 10px;
+     text-decoration: underline;
+    color: blue;
+}
+.t5 .columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    height: 20vh;
+
+}
+.t5 .column {
+    width: 32%;
+    background-color: #e3e3e3;
+    padding: 20px;
+    text-align: center;
+}
+.t5 .footer {
+    font-size: 14px;
+}
+  </style>
+
+  <body>
+    <h2>Task1</h2>
+    <div class="t1">
+      <div class="header">Header</div>
+      <div class="content">
+        <div class="nav">Nav</div>
+        <div class="article">Article</div>
+      </div>
+      <div class="footer">Footer</div>
+    </div>
+    <br />
+    <h2>Task2</h2>
+    <div class="t2">
+      <header>Header</header>
+      <nav>Navigation Bar</nav>
+      <main>Main Content</main>
+      <footer>Footer</footer>
+    </div>
+    <br />
+    <h2>Task3</h2>
+    <div class="t3">
+      <header>Header</header>
+      <nav>Navigation Bar</nav>
+      <div class="container">
+        <div class="side">Left Panel</div>
+        <div class="main-content">Main Content</div>
+      </div>
+      <footer>Footer</footer>
+    </div>
+
+    <br />
+    <h2>Task4</h2>
+    <div class="t4">
+        <header>Header</header>
+
+        <main>
+            <section class="top">
+            <div class="intro">Intro Copy</div>
+            <div class="right">
+                <div class="hero">Hero Image</div>
+                <div class="call">Call to Action</div>
+            </div>
+        </section>
+
+        <section class="features">Features</section>
+
+        <section class="bottom">
+            <div class="copy">More Copy</div>
+            <div class="call">Call to Action</div>
+        </section>
+        </main>
+
+        <footer>Footer</footer>
+    </div>
+    <br/>
+    
+    <h2>Task5</h2>
+    <div class="t5">
+        <div class="header">
+            <div class="logo">Logo</div>
+        </div>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="feature">Feature</div>
+        <div class="columns">
+            <div class="column">Column One</div>
+            <div class="column">Column Two</div>
+            <div class="column">Column Three</div>
+        </div>
+        <div class="footer">© Copyright 2011</div>
+    </div>
+
+</body>
+
+  </body>
+</html>
