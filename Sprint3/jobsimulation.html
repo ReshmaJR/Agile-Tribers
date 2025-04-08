@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Similation3</title>
+    <link rel="stylesheet" href="jobsimulation.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@700&family=Lora:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <style>
+    body {
+    font-family: 'Cormorant Garamond', serif;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+  
+    .passport{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    /* <!-- PASSPORT COVER --> */
+
+   .passport1 {
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(
+          rgba(240, 211, 237, 0.553),
+          rgba(255, 244, 244, 0.437)
+        ),
+        url("./images/bg img.jpg");
+      background-position: center;
+      height: 85vh;
+      border-radius: 20px;
+      width: 60vh;
+      overflow: visible;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+     .tittle{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      position: relative; 
+    }
+    .tittle h1{
+      z-index: 2;
+      position: relative; 
+
+    }
+    .tittle img{
+      position: absolute;
+      top: 50px; 
+      left: 10px; 
+      transform: rotate(20deg); 
+      opacity: 40%;
+      z-index: 1;
+
+    }
+    .cover {
+      flex: 2;
+      text-align: center;
+    }
+    .cover p {
+      font-size: 18px;
+    }
+    .cover h1 {
+      color: rgb(194, 45, 70);
+      font-family: "Playfair Display", serif;
+    }
+    .cover h2 {
+      font-family: "Cormorant Garamond", serif;
+    }
+
+    .cover span {
+      font-size: 22px;
+      color: black;
+    }
+    .cover img {
+      width: 55%;
+      height: 80%;
+      opacity: 90%;
+    }
+
+    /* PASSPORT INVITATION */
+
+    .passport2 {
+      height: 85vh;
+      width: 120vh;
+       
+      background-size: fill;
+      background: linear-gradient(
+            rgba(249, 176, 214, 0.553),
+            rgba(250, 234, 241, 0.553),
+            
+            rgba(199, 82, 141, 0.437)
+          ),url('https://media.istockphoto.com/id/951160010/vector/%C3%B0%C3%B0%C2%B5%C3%B1%C3%B0%C3%B1%C3%B1.jpg?s=612x612&w=0&k=20&c=sAzz_0z2lECTDyPna7WQi4XpxIamO5gEFZqwqoHIxDA=');
+      background-blend-mode: darken;
+      border-radius: 20px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    }
+    .passport2 .content {
+      display: flex;
+      
+    }
+    .passport2 h1 {
+      text-align: center;
+      font-family: "Cormorant Garamond", serif;
+      color: rgb(194, 45, 70);
+      
+    }
+    .content .img {
+      flex: 0.5;
+    }
+    .content .details {
+      flex: 3;
+      flex-direction: row;
+      margin-left: 0%;
+      padding: 10px 0px;
+    }
+    .content .details p {
+      font-family: "Playfair Display", serif;
+      font-size: 20px;
+      color: rgb(194, 45, 70);
+    }
+    .content .details span {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 16px;
+      color: black;
+      font-weight: bold;
+    }
+    .content .stamp {
+      flex: 1;
+    }
+    .stamp-container {
+      position: relative;
+      width: 200px; 
+      padding: 30px 50px 0px 0px;
+    }
+
+    .stamp1 {
+      height: 140px;
+      width: 140px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .stamp2 {
+      height: 120px;
+      width: 120px;
+      position: absolute;
+      top: 120px; 
+      left: 50px; 
+      transform: rotate(20deg); 
+      opacity: 40%;
+      z-index: 1;
+    }
+  </style>
+  <body>
+    
+  <div class="passport">
+    <!-- PASSPORT COVER -->
+      <div class="passport1">
+        <div class="cover">
+        <div class="tittle">
+          <h1>
+          BUNDESREPUBLIK <br />
+          DEUTSCHLAND
+        </h1>
+        <img src="./images/stamp1.png" style="  height: 100px;
+        width: 100px;
+        transform: rotate(10deg);"/>  
+        </div>
+        <p>WEDDING PASSPORT</p> 
+        <img src="./images/compass.png" alt="" />
+
+        <h1>
+          Pedro <i class="fa-solid fa-plane" style="color: #c22d50"></i> Raquel
+          <br />
+          <span>15 . 10 . 2025</span>
+        </h1>
+       
+      </div>
+    </div>
+    <br />
+
+    <!-- PASSPORT INVITATION -->
+
+    <div class="passport2">
+      <div class="pass_content">
+        <h1>WEDDING INVITATION</h4>
+        <hr />
+        <div class="content">
+          <div class="img">
+            <img
+              src="./images/couple2.png"
+              alt="couple"
+              style="height: 450px; width: 450px"
+            />
+          </div>
+          <div class="details">
+            <p>
+              THE GROOM <br />
+              <span> Pedro</span>
+            </p>
+            <p>
+              THE BRIDE <br />
+              <span> Raquel</span>
+            </p>
+            <p>
+              DATE & TIME <br />
+              <span> Oct 15 @ 08:00.a.m</span>
+            </p>
+
+            <p>
+              LOCATION <br />
+              <span
+                >Cologne Cathedral
+                <br />
+                Domkloster</span
+              >
+            </p>
+            <p>
+              KINDLY RSVP <br />
+              <span> By 14/09/2025</span>
+            </p>
+          </div>
+          <div class="stamp-container">
+            <img src="./images/stamp1.png" alt="stamp" class="stamp1" />
+            <img src="./images/stamp2.png" alt="stamp1" class="stamp2" />
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <hr />
+        <p style="text-align: center; font-size: 14px">
+          FOR FURTHER INFORMATION, CONTACT <br />
+          raquelpedro@gmail.com
+        </p>
+      </div>
+    </div>
+     </div>
+
+
+<!-- BOARDING PASS -->
+
+<div class="boardingpass">
+  <div class="invitation">
+    <div class="first">
+      <img
+        src="./images/stamp1.png"
+        alt="stamp"
+        style="
+          height: 140px;
+          width: 140px;
+          margin-top: 0;
+          align-self: self-start;
+        "
+      />
+
+      <h2>awaits your arrival!<br />Domkloster, 15 october 2025</h2>
+    </div>
+    <div class="second">
+      <p>
+        Mark 10:9<br />Therefore, what God has joined together,let no man
+        separate
+      </p>
+      <h2>
+        Save <span>the</span> Date <br />
+        <span>&</span> Book your Seats
+      </h2>
+      <h4>FOR THE WEDDING OF</h4>
+      <h1>PEDRO & RAQUEL</h1>
+      <p
+        style="
+          font-family: 'Great Vibes', cursive;
+          font-weight: 500;
+          font-size: 32px;
+          font-style: normal;
+        "
+      >
+        Fly away with us!
+      </p>
+      <div class="details">
+        <p>
+          Date <br />
+          <span> OCT 15th</span>
+        </p>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg"
+          style="height: 150px; width: 150px"
+        />
+        <p>
+          Time <br />
+          <span>08:00 AM </span>
+        </p>
+      </div>
+      <p>
+        Destination <br />
+        <span
+          style="
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(194, 45, 70);
+          "
+          >COLOGNE CATHEDRAL</span
+        ><br /><span style="font-weight: bold; color: rgb(194, 45, 70)"
+          >DOMKLOSTER, GERMANY</span
+        >
+      </p>
+    </div>
+    <div class="divider"></div>
+
+    <div class="third">
+      <div class="content">
+        <h1>RSVP</h1>
+        <h3>
+          Please respond before <br />
+          <span>14 Sep 2025</span>
+        </h3>
+        <form>
+          <input type="radio" id="option1" name="choice" value="option1" />
+          <label for="option1">We're coming!!</label>
+          <br />
+          <input type="radio" id="option2" name="choice" value="option2" />
+          <label for="option2">Sorry, we can't</label>
+        </form>
+        <p>
+          raquelpedro@gmail.com <br />
+          +91 9587242357
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
