@@ -1,0 +1,107 @@
+/* BOARDING PASS */
+
+.boardingpass{
+    background:  linear-gradient( rgba(235, 203, 232, 0.553),rgba(255, 244, 244, 0.437)), url('./images/bg\ img.jpg');
+    background-repeat: no-repeat;
+    margin: 100px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 160vh;
+    overflow:visible;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.invitation{
+    display: flex;
+    flex-direction: row;
+    
+}
+.first {
+ flex: 0.5;
+ background-color:rgb(232, 112, 132);
+ border-top-left-radius: 30px;  
+ border-bottom-left-radius: 30px;
+ 
+}
+.first h2{
+    transform: rotate(180deg);
+    display: inline-block;
+    writing-mode: vertical-lr;
+    padding: 0px 0px; 
+    text-align: center;  
+    margin-top: 30px;
+    font-size: 32px; 
+    color: rgb(39, 37, 37);
+}
+.second{
+    flex: 2;
+    text-align: center;
+}
+.second p{
+    font-size: 18px; 
+}
+.second h1{
+    color:rgb(194, 45, 70);
+    font-family: 'Playfair Display', serif;
+
+}
+.second h2{
+    font-family: 'play';
+    font-family: 'Playfair Display', serif;
+
+}
+.second h2 span{    
+    font-family: 'Great Vibes', cursive;   
+}
+.second .details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;  
+}
+.second  span{
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(194, 45, 70);
+} 
+.divider {
+    border-right: 3px dashed rgb(79, 78, 78);
+    margin-left: 0px;
+    margin-right: 0px;
+    position: relative;
+}
+
+.third{
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    background-image: url('./images/couple.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom ; 
+    background-position-x: 50%;
+    margin-bottom: -25px;
+    
+}
+.third h1{
+    font-family: 'Playfair Display', serif;
+    color:rgb(194, 45, 70);
+}
+.third .content{
+   
+        width: 80%;     
+}
+.content h3{
+    font-size: 20px;
+}
+.content span{
+    color:rgb(194, 45, 70);
+    font-size: 26px;
+
+}
+.content form{
+    font-size: 18px;
+}
+
