@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Choose & Display Selections</title>
+    <style>
+      .highlight {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      button {
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gradient-bg">
+      <h2>Pick your next Destination</h2>
+      <input type="radio" name="destination" value="Greece" /> Greece<br />
+      <input type="radio" name="destination" value="Spain" /> Spain<br />
+      <input type="radio" name="destination" value="Turkey" /> Turkey<br />
+
+      <h2>Travel Modes</h2>
+      <input type="checkbox" name="modes" value="Flight" /> Flight<br />
+      <input type="checkbox" name="modes" value="Bus" /> Bus<br />
+      <input type="checkbox" name="modes" value="Train" />
+      Train<br />
+
+      <br />
+      <button onclick="showSelections()">Show my interest</button>
+
+      <p id="resultArea"></p>
+    </div>
+
+    <hr />
+
+    <h1 id="pageHeading">Welcome to Istanbul, Turkey</h1>
+
+    <p class="info highlight">
+      Welcome to Istanbul, where East meets West in a breathtaking blend of
+      culture and history.
+    </p>
+    <p class="info highlight">
+      Wander through ancient streets, vibrant bazaars, and along the shimmering
+      Bosphorus.
+    </p>
+    <p class="info highlight">
+      Let the magic of this timeless city captivate your heart and soul.
+    </p>
+
+    <button onclick="updatePage()">Apply changes</button>
+
+    <script>
+      function showSelections() {
+        let selectedDest = document.querySelector(
+          'input[name="destination"]:checked'
+        );
+        let destination = selectedDest
+          ? selectedDest.value
+          : "No destination Selected";
+
+        let selectedmodes = document.querySelectorAll(
+          'input[name="modes"]:checked'
+        );
+        let modes = [];
+        selectedmodes.forEach(function (mode) {
+          modes.push(mode.value);
+        });
+
+        document.getElementById("resultArea").innerHTML =
+          "<strong>destination:</strong> " +
+          destination +
+          "<br>" +
+          "<strong>modes:</strong> " +
+          (modes.length ? modes.join(", ") : "No modes Selected");
+      }
+
+      function updatePage() {
+        let heading = document.getElementById("pageHeading");
+        heading.textContent = "Welcome to Istanbul, Turkey";
+        heading.style.color = "red";
+
+        let firstInfo = document.querySelector(".info");
+        firstInfo.style.color = "darkgreen";
+        firstInfo.style.fontWeight = "bold";
+
+        let allHighlights = document.querySelectorAll(".highlight");
+        allHighlights.forEach(function (para, idx) {
+          para.style.backgroundColor = "pink";
+          para.style.padding = "12px";
+          console.log("Paragraph [" + idx + "]:", para.textContent);
+        });
+      }
+    </script>
+  </body>
+</html>
