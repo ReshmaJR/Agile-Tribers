@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task3</title>
+  </head>
+  <style>
+    body{
+        background-color: rgba(241, 199, 206, 0.616);
+    }
+    h2{
+        text-align: center;
+        padding-top: 200px;
+        color: rgb(129, 24, 24);
+    }
+  </style>
+  <body>
+    <h2>Right click > Inspect > Console</h2>
+
+    <script>
+      //task 1
+      let person1 = {
+        name: "Messi",
+        age: 36,
+        city: "Rosario",
+      };
+      console.log("Name:", person1.name);
+      console.log("Age:", person1.age);
+      console.log("City:", person1.city);
+
+      person1.city = "Barcelona";
+      console.log("Updated Person Object:", person1);
+
+      //task 2
+      let person2 = {
+        firstName: "Pedri",
+        lastName: "Gonzalez",
+        getFullName: function () {
+          return this.firstName + " " + this.lastName;
+        },
+      };
+
+      console.log("Full Name:", person2.getFullName());
+
+      //task 3
+      let jsonString =
+        '{ "name": "Pedri", "email": "pedri@gmail.com", "skills": ["Dribbling", "Game Control", "Assisting"] }';
+
+      let userObject = JSON.parse(jsonString);
+
+      console.log("Name:", userObject.name);
+      console.log("Email:", userObject.email);
+      console.log("Skills:", userObject.skills.join(", "));
+
+      //task 4
+      fetch("data.json")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          console.log("User Data:", data);
+          data.forEach((user) => {
+            console.log(
+              `Name: ${user.name}, Age: ${user.age}, City: ${user.city}`
+            );
+          });
+        })
+        .catch((error) => {
+          console.error("Error fetching the JSON file:", error);
+        });
+    </script>
+  </body>
+</html>
