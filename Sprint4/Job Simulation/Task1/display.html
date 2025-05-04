@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Display Data</title>
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+</head>
+<body>
+  <div class="container">
+    <h2> User Data</h2>
+    <p><strong>Name:</strong> <span id="displayName"></span></p>
+    <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+    <p><strong>Age:</strong> <span id="displayAge"></span></p>
+  </div>
+
+  <script>
+    const data = JSON.parse(localStorage.getItem("userData"));
+    if (data) {
+      document.getElementById("displayName").textContent = data.name;
+      document.getElementById("displayEmail").textContent = data.email;
+      document.getElementById("displayAge").textContent = data.age;
+    } else {
+      document.body.innerHTML = "<h2>No user data found.</h2>";
+    }
+  </script>
+</body>
+</html>
