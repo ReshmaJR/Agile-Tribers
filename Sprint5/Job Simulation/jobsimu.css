@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #c1dfc4, #deecdd, #cfd9df, #e2c8f9);
+background: url('https://images.unsplash.com/photo-1606761568499-6d2451b23c66?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+ background-repeat: no-repeat;
+  background-size: cover;           
+  background-position: center;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  background: white;
+  height: 450px;
+  width: 450px;
+  padding: 25px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  
+}
+
+h1 {
+  font-size: 26px;
+  color: #3c1053;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* h1 i {
+  margin-right: 6px;
+} */
+
+.input-group,
+.search-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.input-group input,
+.search-group input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-group button {
+  margin-left: 10px;
+  background: #7e57c2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.input-group button:hover {
+  background: #673ab7;
+}
+
+.search-group {
+  position: relative;
+}
+
+.search-group i {
+  position: absolute;
+  left: 12px;
+  color: #999;
+}
+
+.search-group input {
+  padding-left: 32px;
+}
+
+.student-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.student-list li {
+  background: #f2eafa;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student-list li span {
+  font-size: 15px;
+  color: #4a148c;
+  flex: 1;
+}
+
+.student-list li .actions button {
+  background: none;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.actions .edit {
+  color: #3f51b5;
+}
+
+.actions .delete {
+  color: #e53935;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+}
+
+#clearAllBtn {
+  background: #e53935;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#clearAllBtn:hover {
+  background: #d32f2f;
+}
