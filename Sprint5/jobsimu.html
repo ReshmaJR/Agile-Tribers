@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprint5 JobSimu</title>
+    <link rel="stylesheet" href="jobsimu.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>College Student Name List</h1>
+
+      <div class="input-group">
+        <input type="text" id="studentInput" placeholder="Enter student name" />
+        <button id="addBtn">Add</button>
+      </div>
+
+      <div class="search-group">
+        <input type="text" id="searchInput" placeholder="Search student..." />
+      </div>
+
+      <ul id="studentList" class="student-list"></ul>
+
+      <div class="footer">
+        <button id="clearAllBtn"><i class="fas fa-trash"></i> Clear All</button>
+        <span>Total Students: <span id="studentCount">0</span></span>
+      </div>
+    </div>
+
+    <script src="jobsimu.js"></script>
+  </body>
+</html>
